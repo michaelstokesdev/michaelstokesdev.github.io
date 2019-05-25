@@ -21,12 +21,22 @@ div{
 }
 
 ul{
+	padding: 0px;
 	display: inline;
 	list-style: none;
 }
 
+li{
+	padding-top: 1vmax;
+	padding-bottom: 1vmax;
+}
+
+img{
+	height: 5vmax;
+}
+
 hr{
-	border-top: 1px solid black;
+	border-top: 0.01vmax solid black;
 }
 
 a{
