@@ -7,11 +7,18 @@ body{
 	text-decoration: none;
 }
 
-div{
-	display: inline-block;
+.main{
+	-webkit-animation: fadein 1s;
+    -moz-animation: fadein 1s;
+	-ms-animation: fadein 1s;
+    -o-animation: fadein 1s;
+    animation: fadein 1s;
+
 	width: fit-content;
 	padding: 5vmax;
 	background-color: ivory;
+
+	font-size: 2.5vmax;
 
 	margin: 0;
 	position: absolute;
@@ -20,9 +27,16 @@ div{
 	transform: translate(-50%, -50%);
 }
 
+.links{
+	display: inline;
+}
+
+h1{
+	font-size: 3vmax;
+}
+
 ul{
 	padding: 0px;
-	display: inline;
 	list-style: none;
 }
 
@@ -57,4 +71,24 @@ a:hover {
 
 a:active {
     text-decoration: underline;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
