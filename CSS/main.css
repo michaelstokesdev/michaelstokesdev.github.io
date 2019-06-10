@@ -27,10 +27,6 @@ body{
 	transform: translate(-50%, -50%);
 }
 
-.links{
-	display: inline;
-}
-
 h1{
 	font-size: 3vmax;
 }
