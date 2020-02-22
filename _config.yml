@@ -1,6 +1,0 @@
-title: Michael Stokes - Blog
-baseurl: /blog
-url: https://stokesdev.co.uk
-theme: jekyll-theme-minimal
-exclude:
-  - 404.md
