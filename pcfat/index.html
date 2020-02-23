@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html">
+	<meta charset="UTF-8">
+	<meta name="description" content="A Python character frequency analysis tool">
+	<meta name="keywords" content="Developer,UK,Software,Cryptanalysis">
+	<link href="../CSS/main.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="../Resources/favicon.ico">
+	<title>Python Character Frequency Analysis Tool</title>
+</head>
+
+<body>
+	<div class="centered">
+
+		<a href="../projects/">Back to projects</a>
+		<h1>Python Character Frequency Analysis Tool</h1>
+		<h3>Contents:</h3>
+		<ul class="contents">
+			<li><a href="#code">Source Code</a></li>
+			<li><a href="#requirements">Requirements</a></li>
+			<li><a href="#use">How to use the tool</a></li>
+			<li><a href="#library">Use as a library</a></li>
+			<li><a href="#bugreports">Reporting bugs</a></li>
+			<li><a href="#featuresuggestion">Suggesting features</a></li>
+			<li><a href="#screenshots">Screenshots</a></li>
+		</ul>
+
+	</div>
+
+	<br>
+
+	<div>
+		<a name="code"></a>
+		<h2>Source Code</h2>
+		<p>All of the source code for the tool can be found in the <a href="https://github.com/michaelstokesdev/PCFAT">GitHub repository</a>.</p>
+
+		<br>
+
+		<a name="requirements"></a>
+		<h2>Requirements to run</h2>
+		<p>
+			There are a few requirements for this tool. They are:
+		</p>
+
+		<ul>
+			<li>Python 3</li>
+			<li>The MatPlotLib library</li>
+		</ul>
+
+		<br>
+
+		<a name="use"></a>
+		<h2>How to use the tool</h2>
+		<p>
+			This tool is very simple and intuative to use. It can be operated either through the command line or through the built in GUI. There are a number of different
+			options for how to use the tool, including using it as a library in your own programs by importing it.
+		</p>
+
+		<h3>GUI Operation</h3>
+		<p>
+			Operating this tool with the GUI should be simple and intuative for most people. To do this you simply run the program with no command line arguments and the GUI will start
+			automatically. Currently through the GUI the only option is to generate a graph of the character frequencies.
+		</p>
+		
+		<h3>Command Line Operation</h3>
+		<p>
+			Command line operation of this tool should be fairly simple. To run using the command line you simply type the python command, followed by the input file, followed by any desired arguments.
+			For example: <br> <br>
+			<b>python3 test.txt -g</b> <br> <br>
+			There are a number of different arguments that can be used. Leaving the arguments blank will open the default GUI environment. The arguments for the program are as follows:
+		</p>
+		<ul>
+			<li>-h - Provides a list of all the command line arguments that can be used and the parameters that they require.</li>
+			
+			<li>-o [filename] - This will output all of the percentage values in a JSON dictionary format to a specified file. This will not overwrite existing files.</li>
+			
+			<li>-g - This will display a graph of the specified input file using the MatPlotLib library.</li>
+		</ul>
+
+		<br>
+
+		<a name="library"></a>
+		<h2>Use as a library</h2>
+		<p>
+			This tool can also be easily used as a library to perform frequency analysis on any string. To do this simply take the pcfat.py file, place it into a directory
+			in your project and then import the file and use it's functions. Some potentially useful functions are:
+		</p>
+		<ul>
+			<li>getTotals(text) - This returns a dictionary of all the characters in the given text and a count of the total number of non whitespace characters in the text.</li>
+			<li>getPercentage(dictionary from getTotals, total character count) - This returns a dictionary containing percentage values for how much of the text is made up of each character.</li>
+			<li>
+				getFrequencies(text) - This returns the result of putting the return value of getTotals into getPercentage with all whitespace characters removed. i.e. text
+				 > whitespace removed > getTotals > getPercentage > return.
+			</li>
+		</ul>
+
+		<br>
+
+		<a name="bugreports"></a>
+		<h2>Bug Reporting</h2>
+		<p>
+			If you find any bugs in the program please feel free to open an issue on the GitHub page and I will try to fix it as quickly as possible.
+		</p>
+
+		<a name="featuresuggestion"></a>
+		<h2>Feature Suggestion</h2>
+		<p>
+			If you wish to suggest a feature that can be added to the project feel free to open an issue on the GitHub repo with the feature suggestion label.
+		</p>
+		
+		<div class="centered" >
+			<h2>Screenshots</h2>
+			<a name="screenshots"></a>
+			<img src="../Resources/Images/GraphOutPut.png" alt="Screenshot of graph output">
+			<br>
+			<img src="" alt="Graph output">
+		</div>
+
+	</div>
+
+	<br>
+
+	
+
+</body>
+
+</html>
